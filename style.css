@@ -1,0 +1,73 @@
+/* style.css */
+
+body {
+    background-color: #f8f9fa; /* Warna latar belakang lembut */
+    padding-bottom: 60px; /* Ruang untuk footer */
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+/* Styling Card Ringkasan */
+.card.bg-success, .card.bg-danger, .card.bg-info {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card.bg-success:hover, .card.bg-danger:hover, .card.bg-info:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling untuk tabel */
+#riwayat-transaksi-body .transaction-row:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Highlight saat hover */
+}
+
+#riwayat-transaksi-body .btn-edit,
+#riwayat-transaksi-body .btn-delete {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Agar form error terlihat jelas */
+#form-error {
+    font-weight: bold;
+}
+
+/* Responsiveness tambahan jika perlu */
+@media (max-width: 768px) {
+    .card-body .fa-3x {
+        display: none; /* Sembunyikan ikon besar di mobile agar tidak terlalu ramai */
+    }
+     #export-pdf-btn {
+         width: 100%; /* Tombol PDF full width di mobile */
+         margin-top: 1rem;
+     }
+}
+
+/* Style untuk jenis transaksi di tabel */
+.jenis-pemasukan {
+    color: #198754; /* Hijau Bootstrap */
+    font-weight: bold;
+}
+.jenis-pengeluaran {
+    color: #dc3545; /* Merah Bootstrap */
+    font-weight: bold;
+}
+
+/* Tombol aksi di tabel */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Footer tetap di bawah */
+/* Jika kontennya pendek, cara ini mungkin perlu disesuaikan */
+/* body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1;
+} */
